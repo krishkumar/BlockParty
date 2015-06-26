@@ -1,0 +1,31 @@
+[
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "div.rightcontainer"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "if-domain": ["rediff.com"]
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "div.world_top"
+    },
+        "trigger": {
+            "url-filter": ".*",
+            "if-domain": ["rediff.com"]
+        }
+    },
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "/ad*",
+            "if-domain": ["rediff.com"]
+        }
+    }
+]

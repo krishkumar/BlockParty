@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Go to Settings -&gt; Safari -&gt; Content Blockers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fv6-YB-waB">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Set BlockParty to ON" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qe-4s-8Dv">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlK-pj-vZx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Currently blocking : rediff.com"/>
+                                <connections>
+                                    <action selector="openSiteInSafari:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kja-Fl-Xi5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fv6-YB-waB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Fb-d2-sqO">
+                                <variation key="widthClass=compact" constant="-2"/>
+                            </constraint>
+                            <constraint firstItem="9qe-4s-8Dv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SRR-sl-lg2"/>
+                            <constraint firstItem="9qe-4s-8Dv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e7Y-DA-Rer"/>
+                            <constraint firstItem="wlK-pj-vZx" firstAttribute="top" secondItem="9qe-4s-8Dv" secondAttribute="bottom" constant="108" id="eXl-tt-J6H"/>
+                            <constraint firstItem="Fv6-YB-waB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kde-nw-ndE">
+                                <variation key="widthClass=compact" constant="-100"/>
+                            </constraint>
+                            <constraint firstItem="wlK-pj-vZx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lud-sQ-kDs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Fv6-YB-waB"/>
+                                <exclude reference="9qe-4s-8Dv"/>
+                                <exclude reference="wlK-pj-vZx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7Fb-d2-sqO"/>
+                                <exclude reference="kde-nw-ndE"/>
+                                <exclude reference="SRR-sl-lg2"/>
+                                <exclude reference="e7Y-DA-Rer"/>
+                                <exclude reference="eXl-tt-J6H"/>
+                                <exclude reference="lud-sQ-kDs"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Fv6-YB-waB"/>
+                                <include reference="9qe-4s-8Dv"/>
+                                <include reference="wlK-pj-vZx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7Fb-d2-sqO"/>
+                                <include reference="kde-nw-ndE"/>
+                                <include reference="SRR-sl-lg2"/>
+                                <include reference="e7Y-DA-Rer"/>
+                                <include reference="eXl-tt-J6H"/>
+                                <include reference="lud-sQ-kDs"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="570" y="278"/>
+        </scene>
+    </scenes>
+</document>
