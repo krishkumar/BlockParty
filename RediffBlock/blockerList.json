@@ -1,22 +1,11 @@
 [
     {
         "action": {
-            "type": "css-display-none",
-            "selector": "div.rightcontainer"
+            "type": "block"
         },
         "trigger": {
-            "url-filter": ".*",
-            "if-domain": ["rediff.com"]
-        }
-    },
-    {
-        "action": {
-            "type": "css-display-none",
-            "selector": "div.world_top"
-    },
-        "trigger": {
-            "url-filter": ".*",
-            "if-domain": ["rediff.com"]
+            "url-filter": "/ads*",
+            "if-domain": ["rediff.com","ndtv.com"]
         }
     },
     {
@@ -24,8 +13,68 @@
             "type": "block"
         },
         "trigger": {
-            "url-filter": "/ad*",
-            "if-domain": ["rediff.com"]
+            "url-filter": "/cdn.taboola*",
+            "if-domain": ["rediff.com","ndtv.com"]
+        }
+    },
+    {
+        "action": {
+          "type": "css-display-none",
+          "selector": "div.hmpage_rhs"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "if-domain": ["ndtv.com"]
+        }
+    },
+    {
+        "action": {
+          "type": "css-display-none",
+          "selector": "div.taboola_lhs"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "if-domain": ["ndtv.com"]
+        }
+    },
+    {
+        "action": {
+          "type": "css-display-none",
+          "selector": "div.taboola_rhs"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "if-domain": ["ndtv.com"]
+        }
+    },
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "/criteo*",
+            "if-domain": ["rediff.com","ndtv.com"]
+        }
+    },
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "/trc.taboola*",
+            "if-domain": ["rediff.com","ndtv.com"]
+        }
+    },
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "/zedo*",
+            "if-domain": ["rediff.com","ndtv.com"]
         }
     }
+
+
+
 ]

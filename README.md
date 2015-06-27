@@ -2,7 +2,13 @@
 
 iOS 9 Safari Content Blocker App
 
-- Currently blocks ads on rediff.com, loads pages super fast
+
+- Currently blocks annoying ads on the following sites thereby loading pages super fast
+
+  * rediff.com
+  * ndtv.com
+
+
 - Useful for data-capped, international roaming connections
 - Blocking rules are at [RediffBlock/blockerList.json](RediffBlock/blockerList.json)
 
