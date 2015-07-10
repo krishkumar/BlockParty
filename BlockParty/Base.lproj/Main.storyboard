@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+            <string>AvenirNext-Regular</string>
+            <string>AvenirNext-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -16,74 +23,154 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Go to Settings -&gt; Safari -&gt; Content Blockers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fv6-YB-waB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tap Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fv6-YB-waB">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Set BlockParty to ON" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qe-4s-8Dv">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlK-pj-vZx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNH-2D-qWe">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Currently blocking : rediff.com"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="6dJ-jA-WMc"/>
+                                    <constraint firstAttribute="height" constant="76" id="M6k-IK-UOU"/>
+                                    <constraint firstAttribute="width" constant="50" id="Mr0-HM-iCT"/>
+                                    <constraint firstAttribute="height" constant="50" id="dGp-S7-ENk"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="ios-8-settings-icon"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6dJ-jA-WMc"/>
+                                        <exclude reference="M6k-IK-UOU"/>
+                                        <exclude reference="Mr0-HM-iCT"/>
+                                        <exclude reference="dGp-S7-ENk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Mr0-HM-iCT"/>
+                                        <include reference="dGp-S7-ENk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="6dJ-jA-WMc"/>
+                                        <include reference="M6k-IK-UOU"/>
+                                    </mask>
+                                </variation>
                                 <connections>
-                                    <action selector="openSiteInSafari:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kja-Fl-Xi5"/>
+                                    <action selector="openSiteInSafari:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJK-xL-eHn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Navigate to Safari ➝ Content Blockers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qe-4s-8Dv">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow BlockParty in the list of Content Blockers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sO1-NQ-jcS">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="sO1-NQ-jcS" firstAttribute="top" secondItem="9qe-4s-8Dv" secondAttribute="bottom" constant="11" id="5n6-1D-9PP"/>
                             <constraint firstItem="Fv6-YB-waB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Fb-d2-sqO">
                                 <variation key="widthClass=compact" constant="-2"/>
                             </constraint>
+                            <constraint firstItem="iNH-2D-qWe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9tJ-AG-q5f"/>
+                            <constraint firstItem="sO1-NQ-jcS" firstAttribute="top" secondItem="9qe-4s-8Dv" secondAttribute="bottom" constant="23" id="H8r-I3-0Nc"/>
+                            <constraint firstItem="iNH-2D-qWe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jk5-Fd-ICQ"/>
+                            <constraint firstItem="iNH-2D-qWe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kh6-Ne-9w0"/>
+                            <constraint firstItem="sO1-NQ-jcS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="REI-9Y-m6g"/>
+                            <constraint firstItem="9qe-4s-8Dv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rfg-E3-xED"/>
                             <constraint firstItem="9qe-4s-8Dv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SRR-sl-lg2"/>
                             <constraint firstItem="9qe-4s-8Dv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e7Y-DA-Rer"/>
-                            <constraint firstItem="wlK-pj-vZx" firstAttribute="top" secondItem="9qe-4s-8Dv" secondAttribute="bottom" constant="108" id="eXl-tt-J6H"/>
+                            <constraint firstItem="iNH-2D-qWe" firstAttribute="top" secondItem="Fv6-YB-waB" secondAttribute="bottom" constant="8" id="erY-up-EVu"/>
+                            <constraint firstItem="iNH-2D-qWe" firstAttribute="top" secondItem="Fv6-YB-waB" secondAttribute="bottom" constant="19" id="fls-cV-qhd"/>
+                            <constraint firstItem="Fv6-YB-waB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hti-39-1Yd"/>
                             <constraint firstItem="Fv6-YB-waB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kde-nw-ndE">
                                 <variation key="widthClass=compact" constant="-100"/>
                             </constraint>
-                            <constraint firstItem="wlK-pj-vZx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lud-sQ-kDs"/>
+                            <constraint firstItem="sO1-NQ-jcS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qTq-jd-PeU"/>
+                            <constraint firstItem="9qe-4s-8Dv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="t1S-Qs-vys">
+                                <variation key="heightClass=regular-widthClass=regular" constant="153.5"/>
+                            </constraint>
+                            <constraint firstItem="Fv6-YB-waB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ttC-02-Vzd"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Fv6-YB-waB"/>
+                                <exclude reference="iNH-2D-qWe"/>
                                 <exclude reference="9qe-4s-8Dv"/>
-                                <exclude reference="wlK-pj-vZx"/>
+                                <exclude reference="sO1-NQ-jcS"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="7Fb-d2-sqO"/>
+                                <exclude reference="hti-39-1Yd"/>
                                 <exclude reference="kde-nw-ndE"/>
+                                <exclude reference="ttC-02-Vzd"/>
+                                <exclude reference="9tJ-AG-q5f"/>
+                                <exclude reference="Jk5-Fd-ICQ"/>
+                                <exclude reference="Kh6-Ne-9w0"/>
+                                <exclude reference="erY-up-EVu"/>
+                                <exclude reference="fls-cV-qhd"/>
+                                <exclude reference="Rfg-E3-xED"/>
                                 <exclude reference="SRR-sl-lg2"/>
                                 <exclude reference="e7Y-DA-Rer"/>
-                                <exclude reference="eXl-tt-J6H"/>
-                                <exclude reference="lud-sQ-kDs"/>
+                                <exclude reference="t1S-Qs-vys"/>
+                                <exclude reference="5n6-1D-9PP"/>
+                                <exclude reference="H8r-I3-0Nc"/>
+                                <exclude reference="REI-9Y-m6g"/>
+                                <exclude reference="qTq-jd-PeU"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Fv6-YB-waB"/>
+                                <include reference="iNH-2D-qWe"/>
                                 <include reference="9qe-4s-8Dv"/>
-                                <include reference="wlK-pj-vZx"/>
+                                <include reference="sO1-NQ-jcS"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="7Fb-d2-sqO"/>
                                 <include reference="kde-nw-ndE"/>
+                                <exclude reference="Jk5-Fd-ICQ"/>
+                                <include reference="Kh6-Ne-9w0"/>
+                                <include reference="erY-up-EVu"/>
                                 <include reference="SRR-sl-lg2"/>
                                 <include reference="e7Y-DA-Rer"/>
-                                <include reference="eXl-tt-J6H"/>
-                                <include reference="lud-sQ-kDs"/>
+                                <include reference="5n6-1D-9PP"/>
+                                <include reference="qTq-jd-PeU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="iNH-2D-qWe"/>
+                                <include reference="9qe-4s-8Dv"/>
+                                <include reference="sO1-NQ-jcS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="hti-39-1Yd"/>
+                                <include reference="ttC-02-Vzd"/>
+                                <include reference="9tJ-AG-q5f"/>
+                                <include reference="fls-cV-qhd"/>
+                                <include reference="Rfg-E3-xED"/>
+                                <include reference="t1S-Qs-vys"/>
+                                <include reference="H8r-I3-0Nc"/>
+                                <include reference="REI-9Y-m6g"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="570" y="278"/>
+            <point key="canvasLocation" x="461.25" y="122.25"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ios-8-settings-icon" width="512" height="512"/>
+    </resources>
 </document>

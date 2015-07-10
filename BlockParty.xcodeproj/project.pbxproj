@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B1C37B61B4F65DD0030C500 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1C37B51B4F65DD0030C500 /* SafariServices.framework */; };
 		6B673C111B3DDBE9007CDD18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B673C101B3DDBE9007CDD18 /* main.m */; };
 		6B673C141B3DDBE9007CDD18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B673C131B3DDBE9007CDD18 /* AppDelegate.m */; };
 		6B673C171B3DDBE9007CDD18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B673C161B3DDBE9007CDD18 /* ViewController.m */; };
@@ -43,6 +44,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6B1C37B51B4F65DD0030C500 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		6B673C0C1B3DDBE9007CDD18 /* BlockParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B673C101B3DDBE9007CDD18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B673C121B3DDBE9007CDD18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B1C37B61B4F65DD0030C500 /* SafariServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		6B673C031B3DDBE9007CDD18 = {
 			isa = PBXGroup;
 			children = (
+				6B1C37B51B4F65DD0030C500 /* SafariServices.framework */,
 				6B673C0E1B3DDBE9007CDD18 /* BlockParty */,
 				6B673C2B1B3DE346007CDD18 /* RediffBlock */,
 				6B673C0D1B3DDBE9007CDD18 /* Products */,
@@ -421,6 +425,7 @@
 				6B673C251B3DDBE9007CDD18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B673C351B3DE346007CDD18 /* Build configuration list for PBXNativeTarget "RediffBlock" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +434,7 @@
 				6B673C371B3DE346007CDD18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
