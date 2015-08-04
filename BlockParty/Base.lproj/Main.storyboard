@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="AvenirNext.ttc">
@@ -108,15 +108,6 @@
                                 <exclude reference="sO1-NQ-jcS"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="7Fb-d2-sqO"/>
-                                <exclude reference="hti-39-1Yd"/>
-                                <exclude reference="kde-nw-ndE"/>
-                                <exclude reference="ttC-02-Vzd"/>
-                                <exclude reference="9tJ-AG-q5f"/>
-                                <exclude reference="Jk5-Fd-ICQ"/>
-                                <exclude reference="Kh6-Ne-9w0"/>
-                                <exclude reference="erY-up-EVu"/>
-                                <exclude reference="fls-cV-qhd"/>
                                 <exclude reference="Rfg-E3-xED"/>
                                 <exclude reference="SRR-sl-lg2"/>
                                 <exclude reference="e7Y-DA-Rer"/>
@@ -125,6 +116,15 @@
                                 <exclude reference="H8r-I3-0Nc"/>
                                 <exclude reference="REI-9Y-m6g"/>
                                 <exclude reference="qTq-jd-PeU"/>
+                                <exclude reference="9tJ-AG-q5f"/>
+                                <exclude reference="Jk5-Fd-ICQ"/>
+                                <exclude reference="Kh6-Ne-9w0"/>
+                                <exclude reference="erY-up-EVu"/>
+                                <exclude reference="fls-cV-qhd"/>
+                                <exclude reference="7Fb-d2-sqO"/>
+                                <exclude reference="hti-39-1Yd"/>
+                                <exclude reference="kde-nw-ndE"/>
+                                <exclude reference="ttC-02-Vzd"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -135,15 +135,15 @@
                                 <include reference="sO1-NQ-jcS"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="7Fb-d2-sqO"/>
-                                <include reference="kde-nw-ndE"/>
-                                <exclude reference="Jk5-Fd-ICQ"/>
-                                <include reference="Kh6-Ne-9w0"/>
-                                <include reference="erY-up-EVu"/>
                                 <include reference="SRR-sl-lg2"/>
                                 <include reference="e7Y-DA-Rer"/>
                                 <include reference="5n6-1D-9PP"/>
                                 <include reference="qTq-jd-PeU"/>
+                                <exclude reference="Jk5-Fd-ICQ"/>
+                                <include reference="Kh6-Ne-9w0"/>
+                                <include reference="erY-up-EVu"/>
+                                <include reference="7Fb-d2-sqO"/>
+                                <include reference="kde-nw-ndE"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -153,21 +153,21 @@
                                 <include reference="sO1-NQ-jcS"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="hti-39-1Yd"/>
-                                <include reference="ttC-02-Vzd"/>
-                                <include reference="9tJ-AG-q5f"/>
-                                <include reference="fls-cV-qhd"/>
                                 <include reference="Rfg-E3-xED"/>
                                 <include reference="t1S-Qs-vys"/>
                                 <include reference="H8r-I3-0Nc"/>
                                 <include reference="REI-9Y-m6g"/>
+                                <include reference="9tJ-AG-q5f"/>
+                                <include reference="fls-cV-qhd"/>
+                                <include reference="hti-39-1Yd"/>
+                                <include reference="ttC-02-Vzd"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="461.25" y="122.25"/>
+            <point key="canvasLocation" x="894.75" y="121.5"/>
         </scene>
     </scenes>
     <resources>

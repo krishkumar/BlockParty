@@ -1558,13 +1558,5 @@
     "action": {
       "type": "block"
     }
-  },
-  {
-    "trigger": {
-      "url-filter": "admagnet.net"
-    },
-    "action": {
-      "type": "block"
-    }
   }
 ]
