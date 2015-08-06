@@ -12,7 +12,11 @@
 @interface ViewController ()
 - (IBAction)jsonTapped:(id)sender;
 
-- (IBAction)openSiteInSafari:(id)sender;
+- (IBAction)settingsTapped:(id)sender;
+- (IBAction)site1Tapped:(id)sender;
+- (IBAction)site2Tapped:(id)sender;
+- (IBAction)site3Tapped:(id)sender;
+- (IBAction)site4Tapped:(id)sender;
 
 @end
 
@@ -43,8 +47,24 @@
     [self performSegueWithIdentifier:@"showRules" sender:self];
 }
 
-- (IBAction)openSiteInSafari:(id)sender {
+- (IBAction)settingsTapped:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString: UIApplicationOpenSettingsURLString]];
+}
+
+- (IBAction)site1Tapped:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.latimes.com"]];
+}
+
+- (IBAction)site2Tapped:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.torontotelegraph.com"]];
+}
+
+- (IBAction)site3Tapped:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.ndtv.com"]];
+}
+
+- (IBAction)site4Tapped:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.engadget.com"]];
 }
 
 
