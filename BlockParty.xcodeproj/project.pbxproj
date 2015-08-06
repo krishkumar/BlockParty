@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6B1C37B61B4F65DD0030C500 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1C37B51B4F65DD0030C500 /* SafariServices.framework */; };
+		6B4012461B715EB9007E5B8F /* BlockerRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4012441B715EB9007E5B8F /* BlockerRule.m */; };
+		6B4012471B715EB9007E5B8F /* BlockerRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4012441B715EB9007E5B8F /* BlockerRule.m */; };
+		6B4012481B715EEC007E5B8F /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B673C2C1B3DE346007CDD18 /* blockerList.json */; };
+		6B59AC7E1B724E9A0039854F /* RulesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B59AC7D1B724E9A0039854F /* RulesTableViewController.m */; };
 		6B673C111B3DDBE9007CDD18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B673C101B3DDBE9007CDD18 /* main.m */; };
 		6B673C141B3DDBE9007CDD18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B673C131B3DDBE9007CDD18 /* AppDelegate.m */; };
 		6B673C171B3DDBE9007CDD18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B673C161B3DDBE9007CDD18 /* ViewController.m */; };
@@ -45,6 +49,10 @@
 
 /* Begin PBXFileReference section */
 		6B1C37B51B4F65DD0030C500 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		6B4012441B715EB9007E5B8F /* BlockerRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockerRule.m; sourceTree = "<group>"; };
+		6B4012451B715EB9007E5B8F /* BlockerRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockerRule.h; sourceTree = "<group>"; };
+		6B59AC7C1B724E9A0039854F /* RulesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RulesTableViewController.h; sourceTree = "<group>"; };
+		6B59AC7D1B724E9A0039854F /* RulesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RulesTableViewController.m; sourceTree = "<group>"; };
 		6B673C0C1B3DDBE9007CDD18 /* BlockParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B673C101B3DDBE9007CDD18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B673C121B3DDBE9007CDD18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,10 +111,14 @@
 		6B673C0E1B3DDBE9007CDD18 /* BlockParty */ = {
 			isa = PBXGroup;
 			children = (
+				6B4012441B715EB9007E5B8F /* BlockerRule.m */,
+				6B4012451B715EB9007E5B8F /* BlockerRule.h */,
 				6B673C121B3DDBE9007CDD18 /* AppDelegate.h */,
 				6B673C131B3DDBE9007CDD18 /* AppDelegate.m */,
 				6B673C151B3DDBE9007CDD18 /* ViewController.h */,
 				6B673C161B3DDBE9007CDD18 /* ViewController.m */,
+				6B59AC7C1B724E9A0039854F /* RulesTableViewController.h */,
+				6B59AC7D1B724E9A0039854F /* RulesTableViewController.m */,
 				6B673C181B3DDBE9007CDD18 /* Main.storyboard */,
 				6B673C1B1B3DDBE9007CDD18 /* Assets.xcassets */,
 				6B673C1D1B3DDBE9007CDD18 /* LaunchScreen.storyboard */,
@@ -215,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B4012481B715EEC007E5B8F /* blockerList.json in Resources */,
 				6B673C1F1B3DDBE9007CDD18 /* LaunchScreen.storyboard in Resources */,
 				6B673C1C1B3DDBE9007CDD18 /* Assets.xcassets in Resources */,
 				6B673C1A1B3DDBE9007CDD18 /* Main.storyboard in Resources */,
@@ -237,7 +250,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B673C171B3DDBE9007CDD18 /* ViewController.m in Sources */,
+				6B59AC7E1B724E9A0039854F /* RulesTableViewController.m in Sources */,
 				6B673C141B3DDBE9007CDD18 /* AppDelegate.m in Sources */,
+				6B4012461B715EB9007E5B8F /* BlockerRule.m in Sources */,
 				6B673C111B3DDBE9007CDD18 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B4012471B715EB9007E5B8F /* BlockerRule.m in Sources */,
 				6B673C301B3DE346007CDD18 /* ActionRequestHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

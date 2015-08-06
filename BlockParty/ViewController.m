@@ -9,8 +9,9 @@
 #import "ViewController.h"
 #import <SafariServices/SafariServices.h>
 
-
 @interface ViewController ()
+- (IBAction)jsonTapped:(id)sender;
+
 - (IBAction)openSiteInSafari:(id)sender;
 
 @end
@@ -21,9 +22,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    UINavigationController *navigationController = (UINavigationController *)self.navigationController;
+    UIFont *font = [UIFont fontWithName:@"Avenir Next" size:16];
+    [navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                                [UIColor blackColor],
+                                                                NSForegroundColorAttributeName,
+                                                                font,
+                                                                NSFontAttributeName,
+                                                                nil]];
+    //test call
     [SFContentBlockerManager reloadContentBlockerWithIdentifier:@"com.blackwaterpark.apps.BlockParty.RediffBlock" completionHandler:nil];
-    NSLog(@"Reloading Content Blocker Rules!"); // tested to be not working as of beta 3 :(
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,7 +39,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)jsonTapped:(id)sender {
+    [self performSegueWithIdentifier:@"showRules" sender:self];
+}
+
 - (IBAction)openSiteInSafari:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString: UIApplicationOpenSettingsURLString]];
 }
+
+
 @end
