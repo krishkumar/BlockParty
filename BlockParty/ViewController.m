@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+
     UINavigationController *navigationController = (UINavigationController *)self.navigationController;
     UIFont *font = [UIFont fontWithName:@"Avenir Next" size:16];
     [navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
@@ -56,7 +56,7 @@
 }
 
 - (IBAction)site2Tapped:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.torontotelegraph.com"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.forbes.com"]];
 }
 
 - (IBAction)site3Tapped:(id)sender {

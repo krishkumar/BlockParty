@@ -2,6 +2,8 @@
 
 iOS 9 Safari Content Blocker App
 
+![Screen1](Screenshot01.png)
+![Screen2](Screenshot02.png)
 
 - Currently blocks content from annoying ad networks on all sites thereby loading pages super fast
 
@@ -24,4 +26,4 @@ iOS 9 Safari Content Blocker App
 
 ## TODO
 
-- Modify, recompile JSON rules on the fly
+- Modify, recompile JSON rules in app

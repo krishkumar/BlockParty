@@ -705,6 +705,22 @@
   },
   {
     "trigger": {
+      "url-filter": "gravity.com"
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "grvcdn.com"
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "gscounters.eu1.gigya.com"
     },
     "action": {
