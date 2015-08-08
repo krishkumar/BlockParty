@@ -9,7 +9,7 @@ iOS 9 Safari Content Blocker App
 
 - Useful for data-capped, international roaming connections
 
-- Blocking rules are at [RediffBlock/blockerList.json](RediffBlock/blockerList.json)
+- Blocking rules are at [krishkumar/blockerList.json](krishkumar/blockerList.json)
 
 - View JSON in app
 
