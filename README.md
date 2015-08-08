@@ -15,8 +15,8 @@ iOS 9 Safari Content Blocker App
 
 ## Tested
 
-- iPad mini 2 running ios 9 beta 4
-- iPhone 6 Simulator running ios 9 Beta 4
+- iPad mini 2 running ios 9 beta 5
+- iPhone 6 Simulator running ios 9 beta 5
 - Universal app contains link to Settings, JSON and instructions for turning on Content Blockers
 
 ## Reference Material
