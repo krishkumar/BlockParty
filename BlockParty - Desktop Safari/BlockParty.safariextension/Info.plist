@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Jeffrey Bergier</string>
+	<key>Builder Version</key>
+	<string>10601.1.39.0.2</string>
+	<key>CFBundleDisplayName</key>
+	<string>BlockParty - Desktop</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.SaturdayApps.BlockPart-Desktop</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Content</key>
+	<dict>
+		<key>Content Blocker</key>
+		<string>blockerList.json</string>
+	</dict>
+	<key>Description</key>
+	<string>Desktop version of https://github.com/krishkumar/BlockParty</string>
+	<key>DeveloperIdentifier</key>
+	<string>V6ESYGU6CV</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>None</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>http://www.saturdayapps.com</string>
+</dict>
+</plist>
