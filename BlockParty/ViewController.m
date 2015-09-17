@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import <SafariServices/SafariServices.h>
+#import "UIDeviceHelper.h"
+#import "BlockPartyConstants.h"
 
 @interface ViewController ()
 - (IBAction)jsonTapped:(id)sender;
@@ -17,6 +19,9 @@
 - (IBAction)site2Tapped:(id)sender;
 - (IBAction)site3Tapped:(id)sender;
 - (IBAction)site4Tapped:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *instructionLabel;
+@property (strong, nonatomic) IBOutlet UILabel *instructionLabel2;
+@property (strong, nonatomic) IBOutlet UILabel *instructionLabel3;
 
 @end
 
@@ -34,8 +39,17 @@
                                                                 font,
                                                                 NSFontAttributeName,
                                                                 nil]];
-    //test call
-    [SFContentBlockerManager reloadContentBlockerWithIdentifier:@"com.blackwaterpark.apps.BlockParty.RediffBlock" completionHandler:nil];
+    if (IS_IPHONE_4 || IS_IPHONE_5) {
+        self.instructionLabel.font = [UIFont fontWithName:@"Avenir Next" size:14];
+        self.instructionLabel2.font = [UIFont fontWithName:@"Avenir Next" size:14];
+        self.instructionLabel3.font = [UIFont fontWithName:@"Avenir Next" size:14];
+    }
+    
+    [SFContentBlockerManager reloadContentBlockerWithIdentifier:APP_EXTENSION_NAME completionHandler:^(NSError *error) {
+        if (error!=nil) {
+            NSLog(@"RELOAD OF %@ FAILED WITH ERROR -%@", APP_EXTENSION_NAME,[error localizedDescription]);
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

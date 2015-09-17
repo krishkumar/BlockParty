@@ -49,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		6B1C37B51B4F65DD0030C500 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		6B1F10AA1BAAB455001E799E /* UIDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceHelper.h; sourceTree = "<group>"; };
+		6B1F10AB1BAAB5FC001E799E /* BlockPartyConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockPartyConstants.h; sourceTree = "<group>"; };
 		6B4012441B715EB9007E5B8F /* BlockerRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockerRule.m; sourceTree = "<group>"; };
 		6B4012451B715EB9007E5B8F /* BlockerRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockerRule.h; sourceTree = "<group>"; };
 		6B59AC7C1B724E9A0039854F /* RulesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RulesTableViewController.h; sourceTree = "<group>"; };
@@ -117,6 +119,8 @@
 				6B673C131B3DDBE9007CDD18 /* AppDelegate.m */,
 				6B673C151B3DDBE9007CDD18 /* ViewController.h */,
 				6B673C161B3DDBE9007CDD18 /* ViewController.m */,
+				6B1F10AA1BAAB455001E799E /* UIDeviceHelper.h */,
+				6B1F10AB1BAAB5FC001E799E /* BlockPartyConstants.h */,
 				6B59AC7C1B724E9A0039854F /* RulesTableViewController.h */,
 				6B59AC7D1B724E9A0039854F /* RulesTableViewController.m */,
 				6B673C181B3DDBE9007CDD18 /* Main.storyboard */,

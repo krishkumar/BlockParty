@@ -7,6 +7,7 @@
 //
 
 #import "ActionRequestHandler.h"
+#import "BlockPartyConstants.h"
 
 @interface ActionRequestHandler ()
 
@@ -15,7 +16,7 @@
 @implementation ActionRequestHandler
 
 - (void)beginRequestWithExtensionContext:(NSExtensionContext *)context {
-    NSItemProvider *attachment = [[NSItemProvider alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"blockerList" withExtension:@"json"]];
+    NSItemProvider *attachment = [[NSItemProvider alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:APP_DEFAULT_BLOCKS_FILE withExtension:@"json"]];
     
     NSExtensionItem *item = [[NSExtensionItem alloc] init];
     item.attachments = @[attachment];
