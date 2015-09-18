@@ -16,10 +16,16 @@ Safari Content Blocker App for iOS 9 and OSX
 
 ## Tested
 
-- iPad mini 2 running ios 9 
-- iPhone 6 running ios 9 
+- iPad mini 2 running ios 9
+- iPhone 6 running ios 9
 - Desktop version tested on beta Safari 9 for Yosemite & El Capitan
 - Universal app contains link to Settings, JSON and instructions for turning on Content Blockers
+
+## Device Compatibility
+
+[“Note: Apps containing content blocking extensions for Safari on iOS are available only on 64-bit devices, due to performance limitations of 32-bit devices.”](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewInSafari/Articles/Safari_9.html)
+
+The exceptions to this are iPhone 5 and iPhone 5C which have been tested to be working with BlockParty.
 
 ## Reference Material
 
