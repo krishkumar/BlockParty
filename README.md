@@ -16,8 +16,8 @@ Safari Content Blocker App for iOS 9 and OSX
 
 ## Tested
 
-- iPad mini 2 running ios 9
-- iPhone 6 running ios 9
+- iPad mini 2 running iOS 9
+- iPhone 6 running iOS 9
 - Desktop version tested on beta Safari 9 for Yosemite & El Capitan
 - Universal app contains link to Settings, JSON and instructions for turning on Content Blockers
 
