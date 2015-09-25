@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mdk-ct-yIM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mdk-ct-yIM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="AvenirNext.ttc">
@@ -128,7 +128,9 @@
                             </constraint>
                             <constraint firstItem="iNH-2D-qWe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9tJ-AG-q5f"/>
                             <constraint firstItem="sO1-NQ-jcS" firstAttribute="top" secondItem="9qe-4s-8Dv" secondAttribute="bottom" constant="14" id="Bij-zR-J6X"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="c58-eW-chY" secondAttribute="bottom" constant="64" id="Di9-9z-Wbf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="c58-eW-chY" secondAttribute="bottom" constant="64" id="Di9-9z-Wbf">
+                                <variation key="widthClass=compact" constant="20"/>
+                            </constraint>
                             <constraint firstItem="sO1-NQ-jcS" firstAttribute="top" secondItem="9qe-4s-8Dv" secondAttribute="bottom" constant="23" id="H8r-I3-0Nc"/>
                             <constraint firstItem="HFo-gs-qIo" firstAttribute="top" secondItem="JXa-dk-Q4z" secondAttribute="bottom" constant="8" id="HrY-2p-tSP"/>
                             <constraint firstItem="iNH-2D-qWe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jk5-Fd-ICQ"/>
@@ -146,7 +148,9 @@
                             <constraint firstItem="9qe-4s-8Dv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rfg-E3-xED"/>
                             <constraint firstItem="HFo-gs-qIo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SKg-Gu-RcD"/>
                             <constraint firstItem="9qe-4s-8Dv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SRR-sl-lg2"/>
-                            <constraint firstItem="JXa-dk-Q4z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="a5n-kx-vdr"/>
+                            <constraint firstItem="JXa-dk-Q4z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="a5n-kx-vdr">
+                                <variation key="widthClass=compact" constant="10"/>
+                            </constraint>
                             <constraint firstItem="HFo-gs-qIo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="68" id="bSc-bH-gVG"/>
                             <constraint firstItem="9qe-4s-8Dv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e7Y-DA-Rer"/>
                             <constraint firstItem="iNH-2D-qWe" firstAttribute="top" secondItem="Fv6-YB-waB" secondAttribute="bottom" constant="8" id="erY-up-EVu"/>
@@ -256,6 +260,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="BlockParty" id="Gc7-Nb-YsE"/>
                     <connections>
+                        <outlet property="instructionLabel" destination="Fv6-YB-waB" id="3WT-fY-v6G"/>
+                        <outlet property="instructionLabel2" destination="9qe-4s-8Dv" id="7UL-E4-P4K"/>
+                        <outlet property="instructionLabel3" destination="sO1-NQ-jcS" id="i0a-VD-gX1"/>
                         <segue destination="z3d-IN-rwt" kind="show" identifier="showRules" id="jZD-gU-slA"/>
                     </connections>
                 </viewController>

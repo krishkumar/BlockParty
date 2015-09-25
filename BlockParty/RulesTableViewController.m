@@ -8,6 +8,7 @@
 
 #import "RulesTableViewController.h"
 #import "BlockerRule.h"
+#import "BlockPartyConstants.h"
 
 @interface RulesTableViewController ()
 @property (nonatomic, strong)NSArray *blockerRules;
@@ -108,7 +109,7 @@
 
 - (void)loadRules {
     
-    id data = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"blockerList" withExtension:@"json"]] options:NSJSONReadingAllowFragments error:nil];
+    id data = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:APP_DEFAULT_BLOCKS_FILE withExtension:@"json"]] options:NSJSONReadingAllowFragments error:nil];
     
     if (data!=nil) {
         NSArray *rulesArray = (NSArray *)data;
@@ -130,7 +131,7 @@
 - (void)showJSON
 {
 
-    NSString *filepath = [[NSBundle mainBundle] pathForResource:@"blockerList" ofType:@"json"];
+    NSString *filepath = [[NSBundle mainBundle] pathForResource:APP_DEFAULT_BLOCKS_FILE ofType:@"json"];
     NSError *error;
     NSString *fileContents = [NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:&error];
     
