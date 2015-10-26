@@ -1,5 +1,7 @@
 # BlockParty
 
+[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=562a8a646f3b010100cc3648&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/562a8a646f3b010100cc3648/build/latest)
+
 Safari Content Blocker App for iOS 9 and OSX
 
 ![Screen1](Screenshot01.png)
