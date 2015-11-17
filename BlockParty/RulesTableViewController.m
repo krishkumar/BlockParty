@@ -109,7 +109,28 @@
 
 - (void)loadRules {
     
-    id data = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:APP_DEFAULT_BLOCKS_FILE withExtension:@"json"]] options:NSJSONReadingAllowFragments error:nil];
+    id data;
+    NSString *contentOfURL;
+    if ([APP_DEFAULT_BLOCKS_URL length] != 0) {
+        NSError *error;
+        NSURL *url = [NSURL URLWithString:APP_DEFAULT_BLOCKS_URL];
+        contentOfURL = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:&error];
+        if (error)
+            NSLog(@"Error reading remote json file: %@", error.localizedDescription);
+    }
+    
+    NSError *error;
+    NSData *nsdata;
+    if (contentOfURL != (id)[NSNull null] && contentOfURL.length != 0) {
+        nsdata = [contentOfURL dataUsingEncoding:NSUTF8StringEncoding];
+    } else {
+        NSLog(@"URL not defined or accessible - using local JSON");
+        nsdata = [NSData dataWithContentsOfURL:[[NSBundle mainBundle] URLForResource:APP_DEFAULT_BLOCKS_FILE withExtension:@"json"]];
+    }
+    data = [NSJSONSerialization JSONObjectWithData:nsdata options:NSJSONReadingAllowFragments error:&error];
+    
+    if (error)
+        NSLog(@"Error reading json file: %@", error.localizedDescription);
     
     if (data!=nil) {
         NSArray *rulesArray = (NSArray *)data;
@@ -131,12 +152,22 @@
 - (void)showJSON
 {
 
-    NSString *filepath = [[NSBundle mainBundle] pathForResource:APP_DEFAULT_BLOCKS_FILE ofType:@"json"];
-    NSError *error;
-    NSString *fileContents = [NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:&error];
-    
-    if (error)
-        NSLog(@"Error reading json file: %@", error.localizedDescription);
+    NSString *fileContents;
+    if ([APP_DEFAULT_BLOCKS_URL length] != 0) {
+        NSError *error;
+        NSURL *url = [NSURL URLWithString:APP_DEFAULT_BLOCKS_URL];
+        fileContents = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:&error];
+        if (error)
+            NSLog(@"Error reading remote json file: %@", error.localizedDescription);
+    }
+    if (fileContents == (id)[NSNull null] || fileContents.length == 0) {
+        NSLog(@"URL not defined or accessible - using local JSON");
+        NSError *error;
+        NSString *filepath = [[NSBundle mainBundle] pathForResource:APP_DEFAULT_BLOCKS_FILE ofType:@"json"];
+        fileContents = [NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:&error];
+        if (error)
+            NSLog(@"Error reading json file: %@", error.localizedDescription);
+    }
     
     if (fileContents!=nil) {
         UIViewController *jsonViewController = [[UIViewController alloc] init];
