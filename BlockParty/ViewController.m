@@ -15,13 +15,9 @@
 - (IBAction)jsonTapped:(id)sender;
 
 - (IBAction)settingsTapped:(id)sender;
-- (IBAction)site1Tapped:(id)sender;
-- (IBAction)site2Tapped:(id)sender;
-- (IBAction)site3Tapped:(id)sender;
-- (IBAction)site4Tapped:(id)sender;
-@property (strong, nonatomic) IBOutlet UILabel *instructionLabel;
 @property (strong, nonatomic) IBOutlet UILabel *instructionLabel2;
 @property (strong, nonatomic) IBOutlet UILabel *instructionLabel3;
+- (IBAction)browserTapped:(id)sender;
 
 @end
 
@@ -40,7 +36,6 @@
                                                                 NSFontAttributeName,
                                                                 nil]];
     if (IS_IPHONE_4 || IS_IPHONE_5) {
-        self.instructionLabel.font = [UIFont fontWithName:@"Avenir Next" size:14];
         self.instructionLabel2.font = [UIFont fontWithName:@"Avenir Next" size:14];
         self.instructionLabel3.font = [UIFont fontWithName:@"Avenir Next" size:14];
     }
@@ -65,21 +60,10 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString: UIApplicationOpenSettingsURLString]];
 }
 
-- (IBAction)site1Tapped:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.latimes.com"]];
+
+- (IBAction)browserTapped:(id)sender {
+
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://about:blank"]];
+    
 }
-
-- (IBAction)site2Tapped:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.forbes.com"]];
-}
-
-- (IBAction)site3Tapped:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.ndtv.com"]];
-}
-
-- (IBAction)site4Tapped:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.engadget.com"]];
-}
-
-
 @end

@@ -8,7 +8,7 @@ Safari Content Blocker App for iOS 9 and OSX
 ![Screen2](Screenshot02.png)
 ![Screen3](Screenshot03.png)
 
-- Currently blocks content from annoying ad networks on all sites thereby loading pages super fast
+- Currently blocks content from annoying ad networks thereby loading pages super fast
 
 - Useful for data-capped, international roaming connections
 
@@ -35,9 +35,3 @@ The exceptions to this are iPhone 5 and iPhone 5C which have been tested to be w
 * Instructions to install desktop version: [How to Use BlockParty for Desktop Safari](https://github.com/krishkumar/BlockParty/blob/master/BlockParty%20-%20Desktop%20Safari/How%20to%20Install.md)
 * WWDC 2015 Session 511: [Safari Extensibility: Content Blocking and Shared Links](https://developer.apple.com/videos/wwdc/2015/?id=511)
 * Introduction to WebKit Content Blockers: [Introduction & JSON Syntax](https://www.webkit.org/blog/3476/content-blockers-first-look/)
-
-
-## TODO
-
-- Pause Blocker
-- Modify, recompile JSON rules in app
