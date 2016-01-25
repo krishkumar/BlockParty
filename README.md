@@ -2,7 +2,7 @@
 
 [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=562a8a646f3b010100cc3648&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/562a8a646f3b010100cc3648/build/latest)
 
-Safari Content Blocker App for iOS 9 and OSX
+Content Blocker App for iOS 9 and OS X
 
 ![Screen1](Screenshot01.png)
 ![Screen2](Screenshot02.png)
@@ -20,7 +20,7 @@ Safari Content Blocker App for iOS 9 and OSX
 
 - iPad mini 2 running iOS 9
 - iPhone 6 running iOS 9
-- Desktop version tested on beta Safari 9 for Yosemite & El Capitan
+- Desktop version tested on Safari 9 for Yosemite & El Capitan
 - Universal app contains link to Settings, JSON and instructions for turning on Content Blockers
 
 ## Device Compatibility
