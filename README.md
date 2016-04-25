@@ -58,10 +58,10 @@ Allow `BlockParty` in Content Blockers under Settings → Safari.
 
 ## Device Compatibility
 
-BlockParty is tested to be competible with:
-iPhone: iPhone 5 and above
-iPad: iPad (4th generation) or iPad mini (2nd generation) and above
-iPod touch: iPod touch (6th generation)
+BlockParty is competible with:
+- iPhone: iPhone 5 and above
+- iPad: iPad (4th generation) or iPad mini (2nd generation) and above
+- iPod touch: iPod touch (6th generation)
 
 
 ## References
