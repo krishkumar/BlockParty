@@ -58,9 +58,11 @@ Allow `BlockParty` in Content Blockers under Settings → Safari.
 
 ## Device Compatibility
 
-[“Note: Apps containing content blocking extensions for Safari on iOS are available only on 64-bit devices, due to performance limitations of 32-bit devices.”](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewInSafari/Articles/Safari_9.html)
+BlockParty is competible with:
+- iPhone: iPhone 5 and above
+- iPad: iPad (4th generation) or iPad mini (2nd generation) and above
+- iPod touch: iPod touch (6th generation)
 
-The exceptions to this are iPhone 5 and iPhone 5C which have been tested to be working with BlockParty.
 
 ## References
 
