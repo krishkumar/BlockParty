@@ -16,11 +16,13 @@ Content Blocker App for iOS 9 and OS X
 
 - View JSON in app
 
-## How to Install 
+## How to Install
 
-You need Xcode 7 or later. And an iOS device running atleast iOS 9. 
+You need Xcode 7 or later. And an iOS device running atleast iOS 9.
 
 Step 1
+
+Open a new terminal window in OS X. Refer to [this guide](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line) on using the OS X Terminal.
 
 ```bash
 git clone https://github.com/krishkumar/BlockParty.git
@@ -31,15 +33,15 @@ Step 2
 ```bash
   cd BlockParty
 ```
-  
+
 Step 3
 
 Open `BlockParty.xcodeproj` in Xcode.
 
-  
+
 Step 4
 
-Build and run the application. 
+Build and run the application.
 
 - When running this application on a device you will need to add a signing profile in the project's Build Settings.
 
