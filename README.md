@@ -1,20 +1,23 @@
-# BlockParty
+![BlockParty](blockparty-logo.png)
 
 [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=562a8a646f3b010100cc3648&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/562a8a646f3b010100cc3648/build/latest)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE)
 
-Content Blocker App for iOS 9 and OS X
+- Blocks content from annoying ad networks thereby loading pages super fast
 
-![Screen1](Screenshot01.png)
-![Screen2](Screenshot02.png)
-![Screen3](Screenshot03.png)
-
-- Currently blocks content from annoying ad networks thereby loading pages super fast
-
-- Useful for data-capped, international roaming connections
+- Useful for data-capped, international roaming data connections
 
 - Blocking rules are at [RediffBlock/blockerList.json](RediffBlock/blockerList.json)
 
 - View JSON in app
+
+- Universal app contains link to Settings, JSON and instructions for turning on Content Blockers
+
+## Screenshots
+
+![Screen1](Screenshot01.png)
+![Screen2](Screenshot02.png)
+![Screen3](Screenshot03.png)
 
 ## How to Install
 
@@ -56,11 +59,9 @@ Allow `BlockParty` in Content Blockers under Settings → Safari.
 - iPad mini 2 running iOS 9
 - iPhone 6 running iOS 9
 - Desktop version tested on Safari 9 for Yosemite & El Capitan
-- Universal app contains link to Settings, JSON and instructions for turning on Content Blockers
 
 ## Device Compatibility
 
-BlockParty is compatible with:
 - iPhone: iPhone 5 and above
 - iPad: iPad (4th generation) or iPad mini (2nd generation) and above
 - iPod touch: iPod touch (6th generation)
