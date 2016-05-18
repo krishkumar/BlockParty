@@ -19,7 +19,7 @@
 ![Screen2](Screenshot02.png)
 ![Screen3](Screenshot03.png)
 
-## How to Install
+## How to Install - iOS
 
 You need Xcode 7 or later. And an iOS device running atleast iOS 9.
 
@@ -53,6 +53,13 @@ Step 5
 
 Allow `BlockParty` in Content Blockers under Settings → Safari.
 
+## How to Install - OS X
+
+BlockParty is not available in the Safari gallery. Instead, you must build from source. Follow the below instructions to install from source.
+
+* Instructions to install desktop version: [How to Use BlockParty for Desktop Safari](https://github.com/krishkumar/BlockParty/blob/master/BlockParty%20-%20Desktop%20Safari/How%20to%20Install.md)
+
+I am in the process of making a pre-built package signed by me. Installing this is as easy as double clicking or drag to Safari.
 
 ## Tested
 
