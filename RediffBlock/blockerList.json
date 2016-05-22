@@ -459,6 +459,15 @@
   }
 }, {
   "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?clmbtech\\.com[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
     "url-filter": "^[^:]+://+([^:/]+\\.)?collect\\.igodigital\\.com[:/]",
     "url-filter-is-case-sensitive":true,
     "load-type" : ["third-party"]

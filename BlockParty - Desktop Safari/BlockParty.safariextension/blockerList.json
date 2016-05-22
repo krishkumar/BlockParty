@@ -108,6 +108,15 @@
   }
 }, {
   "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?adswitcher\\.com[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
     "url-filter": "^[^:]+://+([^:/]+\\.)?adsymptotic\\.com[:/]",
     "url-filter-is-case-sensitive":true,
     "load-type" : ["third-party"]
@@ -442,6 +451,15 @@
 }, {
   "trigger": {
     "url-filter": "^[^:]+://+([^:/]+\\.)?clicktale\\.net[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?clmbtech\\.com[:/]",
     "url-filter-is-case-sensitive":true,
     "load-type" : ["third-party"]
   },
@@ -1305,6 +1323,15 @@
   }
 }, {
   "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?proximic\\.com[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
     "url-filter": "^[^:]+://+([^:/]+\\.)?pulsemgr\\.com[:/]",
     "url-filter-is-case-sensitive":true,
     "load-type" : ["third-party"]
@@ -1387,6 +1414,15 @@
 }, {
   "trigger": {
     "url-filter": "^[^:]+://+([^:/]+\\.)?res-x\\.com[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?revcontent\\.com[:/]",
     "url-filter-is-case-sensitive":true,
     "load-type" : ["third-party"]
   },
@@ -1585,6 +1621,15 @@
 }, {
   "trigger": {
     "url-filter": "^[^:]+://+([^:/]+\\.)?tacoda\\.net[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?tinypass\\.com[:/]",
     "url-filter-is-case-sensitive":true,
     "load-type" : ["third-party"]
   },
