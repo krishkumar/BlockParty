@@ -55,11 +55,16 @@ Allow `BlockParty` in Content Blockers under Settings → Safari.
 
 ## How to Install - OS X
 
-BlockParty is not available in the Safari gallery. Instead, you must build from source. Follow the below instructions to install from source.
+BlockParty is not available in the Safari Extensions Gallery yet. Instead, you can download from here or build from source.
 
-* Instructions to install desktop version: [How to Use BlockParty for Desktop Safari](https://github.com/krishkumar/BlockParty/blob/master/BlockParty%20-%20Desktop%20Safari/How%20to%20Install.md)
+- Download Safari Extension - [BlockParty OS X](https://github.com/krishkumar/BlockParty/blob/master/BlockParty%20-%20Desktop%20Safari/distributable/BlockParty.safariextz?raw=true)
 
-I am in the process of making a pre-built package signed by me. Installing this is as easy as double clicking or drag to Safari.
+  * To install Safari Extension, double click or drag to Safari.
+  * This extension takes effect immediately. You do not need to restart Safari.
+
+- Follow the below instructions to install from source.
+
+  * Instructions to install desktop version: [How to Use BlockParty for Desktop Safari](https://github.com/krishkumar/BlockParty/blob/master/BlockParty%20-%20Desktop%20Safari/How%20to%20Install.md)
 
 ## Tested
 

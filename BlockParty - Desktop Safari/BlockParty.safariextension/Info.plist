@@ -3,28 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>Author</key>
-	<string>Jeffrey Bergier</string>
+	<string>Krishna Kumar</string>
 	<key>Builder Version</key>
-	<string>10601.1.39.0.2</string>
+	<string>11601.6.17</string>
 	<key>CFBundleDisplayName</key>
-	<string>BlockParty - Desktop</string>
+	<string>BlockParty OS X</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.SaturdayApps.BlockPart-Desktop</string>
+	<string>com.blackwaterpark.apps.blockpartyosx</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>100</string>
 	<key>Content</key>
 	<dict>
 		<key>Content Blocker</key>
 		<string>blockerList.json</string>
 	</dict>
 	<key>Description</key>
-	<string>Desktop version of https://github.com/krishkumar/BlockParty</string>
+	<string>Open Source Ad Blocker for OS X</string>
 	<key>DeveloperIdentifier</key>
-	<string>V6ESYGU6CV</string>
+	<string>AE5DZKJHGN</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
@@ -32,12 +32,12 @@
 		<key>Website Access</key>
 		<dict>
 			<key>Include Secure Pages</key>
-			<true/>
+			<false/>
 			<key>Level</key>
-			<string>None</string>
+			<string>All</string>
 		</dict>
 	</dict>
 	<key>Website</key>
-	<string>http://www.saturdayapps.com</string>
+	<string>https://github.com/krishkumar/BlockParty/</string>
 </dict>
 </plist>
