@@ -90,6 +90,15 @@
   }
 }, {
   "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?adsnative\\.com[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
     "url-filter": "^[^:]+://+([^:/]+\\.)?adsonar\\.com[:/]",
     "url-filter-is-case-sensitive":true,
     "load-type" : ["third-party"]
