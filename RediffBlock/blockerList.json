@@ -271,7 +271,8 @@
 }, {
   "trigger": {
     "url-filter": "^[^:]+://+([^:/]+\\.)?gemini\\.yahoo\\.com[:/]",
-    "url-filter-is-case-sensitive":true
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
   },
   "action": {
     "type": "block"
