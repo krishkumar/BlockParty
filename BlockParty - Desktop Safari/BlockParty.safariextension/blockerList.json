@@ -277,7 +277,15 @@
   "action": {
     "type": "block"
   }
-}, {
+ }, {
+    "trigger": {
+        "url-filter": "^[^:]+://+([^:/]+\\.)?beap\\.gemini\\.yahoo\\.com[:/]",
+        "url-filter-is-case-sensitive":true
+    },
+    "action": {
+        "type": "block"
+    }
+ }, {
   "trigger": {
     "url-filter": "^[^:]+://+([^:/]+\\.)?ysm\\.yahoo\\.com[:/]",
     "url-filter-is-case-sensitive":true,
