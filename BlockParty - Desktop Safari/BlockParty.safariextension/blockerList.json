@@ -1277,6 +1277,15 @@
   }
 }, {
   "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?onclickads\\.net[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
     "url-filter": "^[^:]+://+([^:/]+\\.)?opbandit\\.com[:/]",
     "url-filter-is-case-sensitive":true,
     "load-type" : ["third-party"]
@@ -1395,6 +1404,15 @@
 }, {
   "trigger": {
     "url-filter": "^[^:]+://+([^:/]+\\.)?proximic\\.com[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?pub2srv\\.com[:/]",
     "url-filter-is-case-sensitive":true,
     "load-type" : ["third-party"]
   },
@@ -1682,6 +1700,15 @@
   }
 }, {
   "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?steepto.com[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
     "url-filter": "^[^:]+://+([^:/]+\\.)?streamads\\.yahoo\\.com[:/]",
     "url-filter-is-case-sensitive":true,
     "load-type" : ["third-party"]
@@ -1835,6 +1862,15 @@
   }
 }, {
   "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?v86care\\.com[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
     "url-filter": "^[^:]+://+([^:/]+\\.)?veinteractive\\.com[:/]",
     "url-filter-is-case-sensitive":true,
     "load-type" : ["third-party"]
@@ -1872,6 +1908,15 @@
 }, {
   "trigger": {
     "url-filter": "^[^:]+://+([^:/]+\\.)?visualrevenue\\.com[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?wigetmedia\\.com[:/]",
     "url-filter-is-case-sensitive":true,
     "load-type" : ["third-party"]
   },
@@ -1935,6 +1980,22 @@
 }, {
   "trigger": {
     "url-filter": "chartbeat\\.js",
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?advertisement\\.js",
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?ads\\.js",
     "load-type" : ["third-party"]
   },
   "action": {
