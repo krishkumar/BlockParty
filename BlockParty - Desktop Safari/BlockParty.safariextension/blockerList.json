@@ -998,6 +998,42 @@
   }
 }, {
   "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?inmobi\\.com[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?inmobicdn\\.com[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?inmobicdn\\.net[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?inmobicdn-jp\\.com[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
     "url-filter": "^[^:]+://+([^:/]+\\.)?inspectlet\\.com[:/]",
     "url-filter-is-case-sensitive":true,
     "load-type" : ["third-party"]
@@ -1656,6 +1692,15 @@
 }, {
   "trigger": {
     "url-filter": "^[^:]+://+([^:/]+\\.)?skimresources\\.com[:/]",
+    "url-filter-is-case-sensitive":true,
+    "load-type" : ["third-party"]
+  },
+  "action": {
+    "type": "block"
+  }
+}, {
+  "trigger": {
+    "url-filter": "^[^:]+://+([^:/]+\\.)?socialads\\.eu[:/]",
     "url-filter-is-case-sensitive":true,
     "load-type" : ["third-party"]
   },
