@@ -68,8 +68,8 @@ BlockParty is not available in the Safari Extensions Gallery yet. Instead, you c
 
 ## Tested
 
-- iPad mini 2 running iOS 9
-- iPhone 6 running iOS 9
+- iPad mini 2 running iOS 10
+- iPhone 6 running iOS 10
 - Desktop version tested on Safari 9 for Yosemite & El Capitan
 
 ## Device Compatibility

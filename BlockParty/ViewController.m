@@ -18,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *instructionLabel2;
 @property (strong, nonatomic) IBOutlet UILabel *instructionLabel3;
 - (IBAction)browserTapped:(id)sender;
+@property (strong, nonatomic) IBOutlet UIButton *settingsButton;
 
 @end
 
@@ -45,6 +46,17 @@
             NSLog(@"RELOAD OF %@ FAILED WITH ERROR -%@", APP_EXTENSION_NAME,[error localizedDescription]);
         }
     }];
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self
+                                            selector:@selector(handleBlockerState)
+                                                name:UIApplicationDidBecomeActiveNotification
+                                              object:nil];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self handleBlockerState];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,4 +78,30 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://about:blank"]];
     
 }
+
+- (void)handleBlockerState {
+    
+    // getStateofContentBlockerIdentifier API is iOS 10 only
+    if ([[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){.majorVersion = 10, .minorVersion = 0, .patchVersion = 0}]) {
+        [SFContentBlockerManager getStateOfContentBlockerWithIdentifier:APP_EXTENSION_NAME completionHandler:^(SFContentBlockerState * _Nullable state, NSError * _Nullable error) {
+            if (error!=nil) {
+                NSLog(@"GETTING STATE OF %@ FAILED WITH ERROR -%@", APP_EXTENSION_NAME,[error localizedDescription]);
+            } else {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (state.enabled) { // blocker turned ON in settings
+                        self.settingsButton.hidden = YES;
+                        self.instructionLabel2.text = @"BLOCKPARTY ACTIVE";
+                        self.instructionLabel3.hidden = YES;
+                    } else { // blocker turned OFF in settings
+                        self.settingsButton.hidden = NO;
+                        self.instructionLabel2.hidden = NO;
+                        self.instructionLabel2.text = @"Navigate to Safari ➝ Content Blockers";
+                        self.instructionLabel3.hidden = NO;
+                    }
+                });
+            }
+        }];
+    }
+}
+
 @end
