@@ -1,6 +1,5 @@
 ![BlockParty](blockparty-logo.png)
 
-[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=562a8a646f3b010100cc3648&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/562a8a646f3b010100cc3648/build/latest)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE)
 
 - Blocks content from annoying ad networks thereby loading pages super fast
