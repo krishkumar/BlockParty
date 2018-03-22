@@ -3,6 +3,14 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/82ada998bee343eeac33ef772316427a)](https://www.codacy.com/app/krish.kumar/BlockParty?utm_source=github.com&utm_medium=referral&utm_content=krishkumar/BlockParty&utm_campaign=badger)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE)
 
+## One click installer for iOS 
+
+Click here to download and install on your device immediately - [BlockParty](http://blackwaterparkstudios.com/blockparty/)
+
+App Store version is coming soon. 
+
+## Features
+
 - Blocks content from annoying ad networks thereby loading pages super fast
 
 - Useful for data-capped, international roaming data connections
