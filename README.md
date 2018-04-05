@@ -5,9 +5,11 @@
 
 ## One click installer for iOS 
 
-Click here to download and install on your device immediately (iTunes App Store account not needed) - [BlockParty](http://blackwaterparkstudios.com/blockparty/)
+Click here to download and install on your device immediately (iTunes App Store account not needed).
 
-App Store version is coming soon. 
+[![BlockParty](http://blackwaterparkstudios.com/img/download-blockparty@2x.png)](http://blackwaterparkstudios.com/blockparty/)
+
+This version of BlockParty is currently hosted by [Blackwater Park Studios](https://blackwaterparkstudios.com). Work is underway to host on Github. 
 
 ## Features
 
