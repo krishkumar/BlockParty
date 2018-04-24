@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Krishna Kumar</string>
 	<key>Builder Version</key>
-	<string>11601.6.17</string>
+	<string>13605.1.33.1.2</string>
 	<key>CFBundleDisplayName</key>
 	<string>BlockParty OS X</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.1</string>
 	<key>CFBundleVersion</key>
 	<string>100</string>
 	<key>Content</key>
@@ -22,7 +22,7 @@
 		<string>blockerList.json</string>
 	</dict>
 	<key>Description</key>
-	<string>Open Source Ad Blocker for OS X</string>
+	<string>Open Source Ad Blocker for OS X. Blocks ads and trackers on all websites. </string>
 	<key>DeveloperIdentifier</key>
 	<string>AE5DZKJHGN</string>
 	<key>ExtensionInfoDictionaryVersion</key>
