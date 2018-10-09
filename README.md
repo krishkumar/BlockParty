@@ -41,9 +41,10 @@ This version of BlockParty is currently hosted by [Blackwater Park Studios](http
 
 ## Support
 
-1. Support BlockParty by donating. Help keep the web clean and safe for everyone.
-     - PayPal: [paypal.me/paykk][b4c6038a]
-
+1. Support BlockParty by donating.
+     - Amazing [5$](https://paypal.me/paykk/5)
+     - Spectacular [8$](https://paypal.me/paykk/8)
+     - Ultimate [15$](https://paypal.me/paykk/15)
 
 2. Participate in the development of BlockParty. Send a Pull Request.
 
