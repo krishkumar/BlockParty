@@ -3,15 +3,6 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/82ada998bee343eeac33ef772316427a)](https://www.codacy.com/app/krish.kumar/BlockParty?utm_source=github.com&utm_medium=referral&utm_content=krishkumar/BlockParty&utm_campaign=badger)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE)
 
-## One click installer for iOS and macOS
-
-Click here to download and install on your device immediately (iTunes App Store account not needed).
-
-[![BlockParty iOS](https://blackwaterparkstudios.com/img/download-blockparty-ios@2x.png)](https://blackwaterparkstudios.com/blockparty/) [![BlockParty OS X](https://blackwaterparkstudios.com/img/download-blockparty-mac@2x.png)](https://github.com/krishkumar/BlockParty/blob/master/BlockParty%20-%20Desktop%20Safari/distributable/BlockParty.safariextz?raw=true)
-
-
-This version of BlockParty is currently hosted by [Blackwater Park Studios](https://blackwaterparkstudios.com).
-
 ## Features
 
 - Blocks content from annoying ad networks thereby loading web pages super fast
