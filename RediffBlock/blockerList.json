@@ -2150,4 +2150,12 @@
   "action": {
     "type": "block"
   }
+},{
+    "trigger": {
+        "url-filter": ".*",
+        "if-domain": ["webkit.org"]
+    },
+    "action": {
+        "type": "ignore-previous-rules"
+    }
 }]
