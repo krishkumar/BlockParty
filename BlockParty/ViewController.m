@@ -69,14 +69,16 @@
 }
 
 - (IBAction)settingsTapped:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: UIApplicationOpenSettingsURLString]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString] options:@{} completionHandler:^(BOOL success) {
+            //
+    }];
 }
 
 
 - (IBAction)browserTapped:(id)sender {
-
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://about:blank"]];
-    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://about:blank"] options:@{} completionHandler:^(BOOL success) {
+            //
+    }];    
 }
 
 - (void)handleBlockerState {
