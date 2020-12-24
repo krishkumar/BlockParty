@@ -9,7 +9,7 @@
 #ifndef BlockPartyConstants_h
 #define BlockPartyConstants_h
 
-#define APP_EXTENSION_NAME @"com.blackwaterpark.apps.BlockParty.RediffBlock"
+#define APP_EXTENSION_NAME @"com.blackwaterpark.apps.BlockParty.ContentBlock"
 #define APP_DEFAULT_BLOCKS_FILE @"blockerList"
 #define APP_DEFAULT_BLOCKS_URL @"" // full URL of remote blockerList.json file
 
