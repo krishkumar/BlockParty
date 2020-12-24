@@ -13,13 +13,10 @@
 
 @interface ViewController ()
 - (IBAction)jsonTapped:(id)sender;
-
 - (IBAction)settingsTapped:(id)sender;
 @property (strong, nonatomic) IBOutlet UILabel *instructionLabel2;
 @property (strong, nonatomic) IBOutlet UILabel *instructionLabel3;
-- (IBAction)browserTapped:(id)sender;
 @property (strong, nonatomic) IBOutlet UIButton *settingsButton;
-
 @end
 
 @implementation ViewController
@@ -31,11 +28,17 @@
     UINavigationController *navigationController = (UINavigationController *)self.navigationController;
     UIFont *font = [UIFont fontWithName:@"Avenir Next" size:16];
     [navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                                [UIColor blackColor],
-                                                                NSForegroundColorAttributeName,
                                                                 font,
                                                                 NSFontAttributeName,
                                                                 nil]];
+    if (@available(iOS 14.0, *)) {
+        if ([NSProcessInfo processInfo].isiOSAppOnMac) {
+            self.navigationItem.title = @"BlockParty Mac";
+        } else {
+            self.navigationItem.title = @"BlockParty";
+        }
+    }
+    
     if (IS_IPHONE_4 || IS_IPHONE_5) {
         self.instructionLabel2.font = [UIFont fontWithName:@"Avenir Next" size:14];
         self.instructionLabel3.font = [UIFont fontWithName:@"Avenir Next" size:14];
@@ -51,7 +54,9 @@
                                             selector:@selector(handleBlockerState)
                                                 name:UIApplicationDidBecomeActiveNotification
                                               object:nil];
-    
+    UIImageSymbolConfiguration *config = [UIImageSymbolConfiguration configurationWithPointSize:60.0];
+    UIImage *gearImage = [UIImage systemImageNamed:@"gear" withConfiguration:config];
+    [self.settingsButton setImage:gearImage forState:UIControlStateNormal];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -74,13 +79,6 @@
     }];
 }
 
-
-- (IBAction)browserTapped:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://about:blank"] options:@{} completionHandler:^(BOOL success) {
-            //
-    }];    
-}
-
 - (void)handleBlockerState {
     
     // getStateofContentBlockerIdentifier API is iOS 10 only
@@ -97,7 +95,15 @@
                     } else { // blocker turned OFF in settings
                         self.settingsButton.hidden = NO;
                         self.instructionLabel2.hidden = NO;
-                        self.instructionLabel2.text = @"Navigate to Safari ➝ Content Blockers";
+                        NSString *enableBlockerString = @"";
+                        if (@available(iOS 14.0, *)) {
+                            if ([NSProcessInfo processInfo].isiOSAppOnMac) {
+                                enableBlockerString = @"Navigate to Safari ➝ Preferences ➝ Extensions";
+                            } else {
+                                enableBlockerString = @"Navigate to Safari ➝ Content Blockers";
+                            }
+                        }
+                        self.instructionLabel2.text = enableBlockerString;
                         self.instructionLabel3.hidden = NO;
                     }
                 });
