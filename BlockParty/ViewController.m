@@ -31,13 +31,11 @@
                                                                 font,
                                                                 NSFontAttributeName,
                                                                 nil]];
-    if (@available(iOS 14.0, *)) {
-        if ([NSProcessInfo processInfo].isiOSAppOnMac) {
-            self.navigationItem.title = @"BlockParty Mac";
-        } else {
-            self.navigationItem.title = @"BlockParty";
-        }
-    }
+    #if TARGET_OS_UIKITFORMAC
+        self.navigationItem.title = @"BlockParty Mac";
+    #else
+        self.navigationItem.title = @"BlockParty";
+    #endif
     
     if (IS_IPHONE_4 || IS_IPHONE_5) {
         self.instructionLabel2.font = [UIFont fontWithName:@"Avenir Next" size:14];
@@ -96,13 +94,11 @@
                         self.settingsButton.hidden = NO;
                         self.instructionLabel2.hidden = NO;
                         NSString *enableBlockerString = @"";
-                        if (@available(iOS 14.0, *)) {
-                            if ([NSProcessInfo processInfo].isiOSAppOnMac) {
-                                enableBlockerString = @"Navigate to Safari ➝ Preferences ➝ Extensions";
-                            } else {
-                                enableBlockerString = @"Navigate to Safari ➝ Content Blockers";
-                            }
-                        }
+                        #if TARGET_OS_UIKITFORMAC
+                        enableBlockerString = @"Navigate to Safari ➝ Preferences ➝ Extensions";
+                        #else
+                        enableBlockerString = @"Navigate to Safari ➝ Content Blockers";
+                        #endif
                         self.instructionLabel2.text = enableBlockerString;
                         self.instructionLabel3.hidden = NO;
                     }
