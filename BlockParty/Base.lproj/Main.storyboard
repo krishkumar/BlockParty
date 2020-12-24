@@ -62,12 +62,6 @@
                                     <action selector="jsonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pRQ-Wr-Dyc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TAP TO OPEN NEW TAB IN SAFARI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Af-XA-7TS">
-                                <rect key="frame" x="111.5" y="0.0" width="191.5" height="16.5"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
-                                <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
@@ -75,7 +69,6 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="c58-eW-chY" secondAttribute="bottom" constant="20" id="Di9-9z-Wbf">
                                 <variation key="widthClass=compact" constant="20"/>
                             </constraint>
-                            <constraint firstItem="3Af-XA-7TS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qmh-7z-qaj"/>
                             <constraint firstItem="9qe-4s-8Dv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e7Y-DA-Rer"/>
                             <constraint firstItem="sO1-NQ-jcS" firstAttribute="top" secondItem="9qe-4s-8Dv" secondAttribute="bottom" constant="20" id="ole-aA-2wm"/>
                             <constraint firstItem="iNH-2D-qWe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="p6U-xI-hX3"/>
