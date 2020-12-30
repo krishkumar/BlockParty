@@ -5,30 +5,14 @@
 
 ## Features
 
-- Blocks content from annoying ad networks thereby loading web pages super fast
+- Blocks ads, trackers improving page loads
 
-- Blocking rules are at [RediffBlock/blockerList.json](RediffBlock/blockerList.json)
-
-- View blocking rules in app
-
-- Universal app contains link to Settings, JSON and instructions for turning on Content Blockers
+- iOS app + Catalyst app for M1 ARM Macs
 
 ## Screenshots
 
 ![Screen1](Screenshot01.png)
 ![Screen2](Screenshot02.png)
-![Screen3](Screenshot03.png)
-
-## Tested
-
-- iOS 12
-- macOS Mojave
-
-## Device Compatibility
-
-- iPhone: iPhone 5 and above
-- iPad: iPad (4th generation) or iPad mini (2nd generation) and above
-- iPod touch: iPod touch (6th generation)
 
 ## Support
 
@@ -38,6 +22,5 @@
      - Ultimate [15$](https://paypal.me/paykk/15)
 
 2. Participate in the development of BlockParty. Send a Pull Request.
-
 
 [b4c6038a]: http://paypal.me/paykk "paypal.me/paykk"
