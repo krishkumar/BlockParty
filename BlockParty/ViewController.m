@@ -31,12 +31,18 @@
                                                                 font,
                                                                 NSFontAttributeName,
                                                                 nil]];
-    #if TARGET_OS_UIKITFORMAC
+    BOOL isiOSAppOnMac = false;
+    if (@available(iOS 14.0, *)) {
+        isiOSAppOnMac = [NSProcessInfo processInfo].isiOSAppOnMac;
+    }
+
+    NSLog(@"%@", isiOSAppOnMac ? @"iOS app on Mac" : @"not iOS app on Mac");
+    if (isiOSAppOnMac) {
         self.navigationItem.title = @"BlockParty Mac";
-    #else
+    } else {
         self.navigationItem.title = @"BlockParty";
-    #endif
-    
+    }
+
     if (IS_IPHONE_4 || IS_IPHONE_5) {
         self.instructionLabel2.font = [UIFont fontWithName:@"Avenir Next" size:14];
         self.instructionLabel3.font = [UIFont fontWithName:@"Avenir Next" size:14];
@@ -94,11 +100,15 @@
                         self.settingsButton.hidden = NO;
                         self.instructionLabel2.hidden = NO;
                         NSString *enableBlockerString = @"";
-                        #if TARGET_OS_UIKITFORMAC
-                        enableBlockerString = @"Navigate to Safari ➝ Preferences ➝ Extensions";
-                        #else
-                        enableBlockerString = @"Navigate to Safari ➝ Content Blockers";
-                        #endif
+                        BOOL isiOSAppOnMac = false;
+                        if (@available(iOS 14.0, *)) {
+                            isiOSAppOnMac = [NSProcessInfo processInfo].isiOSAppOnMac;
+                        }
+                        if (isiOSAppOnMac) {
+                            enableBlockerString = @"Navigate to Safari ➝ Preferences ➝ Extensions";
+                        } else {
+                            enableBlockerString = @"Navigate to Safari ➝ Content Blockers";
+                        }
                         self.instructionLabel2.text = enableBlockerString;
                         self.instructionLabel3.hidden = NO;
                     }
